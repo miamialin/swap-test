@@ -13,6 +13,11 @@ int main(void)
 	x = y;
 	y = temp;
 	
+        // xor swapping
+         *x ^= *y;
+         *y ^= *x;
+         *x ^= *y;
+	
 	printf("x is now %i\n");
 	printf("y is now %i\n");
 
